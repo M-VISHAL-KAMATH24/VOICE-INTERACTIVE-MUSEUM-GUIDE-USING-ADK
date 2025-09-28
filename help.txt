@@ -1,0 +1,6 @@
+In Phase 1, we built a low-latency voice loop. This is the core engine for a real-time voice assistant.
+In short, we created a system that:
+Listens continuously to the microphone.
+Transcribes the speech into text almost instantly after i stop talking.
+Responds immediately with computer-generated speech.
+Supports Barge-In, meaning it stops talking the moment we start, making the conversation feel natural and not forcing me to wait.
