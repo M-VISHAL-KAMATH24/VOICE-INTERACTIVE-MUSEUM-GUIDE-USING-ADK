@@ -1,0 +1,4 @@
+pip install pyaudio
+pip install faster-whisper
+pip install coqui-tts
+pip install "coqui-tts[server]"
