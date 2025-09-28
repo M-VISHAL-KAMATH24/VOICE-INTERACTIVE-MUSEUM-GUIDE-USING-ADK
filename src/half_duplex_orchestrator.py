@@ -44,7 +44,10 @@ class HalfDuplexLoop:
                         if text:
                             print(f"[ASR {t1 - t0:.2f}s] {text}")
                             # Short, fast reply to keep loop snappy
-                            reply = f"Okay. You said: {text[:120]}"
+                            from src.intent_router import route_to_persona
+                            intent, reply = route_to_persona(text)
+                            print(f"Intent: {intent} | Reply: {reply}")
+
                             self.tts.speak(reply)
 
                         # Reset buffer after each turn
